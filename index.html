@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/petrogennie.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/86f74b1471.js" crossorigin="anonymous"></script>
+    <title>PetroGennie- Delivers Any Time Anywhere</title>
+</head>
+
+<body>
+    <input type="checkbox" id="check" class="input1">
+    <div class="header">
+        <label for="check">
+            <span id="times"><i class="fas fa-times"></i></span>
+            <span id="bars"><i class="fas fa-bars"></i></span>
+        </label>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#myabout">About Us</a></li>
+            <li><a href="#mydeal">Deals in</a></li>
+            <li><a href="#mysolution">Solutions</a></li>
+            <li><a href="#myfaq">Faqs</a></li>
+            <li><a href="#mycontact">Contact Us</a></li>
+            <li><a href="index.html">Login/Register</a></li>
+
+        </ul>
+    </div>
+
+    <div class="container">
+        <div class="mymenu">
+            <div class="topbar">
+                <div class="logo">
+                    <img src="images/petrogennie.png">
+                </div>
+                <div class="topbar_text">
+                    <a href="index.html">Login/Register</a>
+                </div>
+            </div>
+
+            <nav>
+                <div class="tag">
+                    <img src="images/petrogennie2.png">
+
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#myabout">About Us</a></li>
+                        <li><a href="#mydeal">Deals in</a></li>
+                        <li><a href="#mysolution">Solutions</a></li>
+                        <li><a href="#myfaq">Faqs</a></li>
+                        <li><a href="#mycontact">Contact Us</a></li>
+                        <li><a href="index.html">Login/Register</a></li>
+
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <div class="banner">
+            <img src="images/banner5.png">
+
+            <p>PetroGennie- has developed a cloud - based technology platform for on-demand fuel delivery service for
+                industrial and commercial customers through approved fuel suppliers. The platform has been integrated
+                with various payment options such as Debit/Credit Card, UPI payment wallets as well as PetroGennie-
+                XTRAPOWER Loyalty program. The platform will provide end-to-end fuel (diesel,petrol,cng ,lubricants)
+                delivery solution to the customers. The RFID/Geo-fencing/OTP based authorization protocols of the
+                platform will ensure that delivery is made only to the intended customer with complete transparency.
+
+                This platform is now available in select markets in the states of Gujarat, Rajasthan, Uttar Pradesh,
+                Maharashtra, Goa, and West Bengal
+                and many more .The Corporation plans to extend the platform to all major industrial and commercial
+                markets</p>
+        </div>
+
+
+        <div class="content">
+            <div class="contentimage" id="myabout">
+                <img src="images/bus.png">
+            </div>
+
+            <div class="contenthead">
+                <h3>
+                    Promising High-quality Fuel <br> Procuring Directly From OMCs
+                </h3>
+
+                <h2>
+                    About Us
+                </h2>
+
+                <p>The Petrogennie is an endeavor to largely solve the issues of managing your fuel requirement
+                    efficiently, cost-effectively & most importantly, safely. We deliver fuel to users in the manner
+                    prescribed by the petroleum ministry and we are licensed by PESO (Petroleum & Explosives Safety
+                    Organization). Subject to government regulations we strive to revolutionize petrogennie in India, by
+                    transporting any type of fuel at your doorstep.
+                </p>
+                <a href="index.html"> Read More </a>
+            </div>
+        </div>
+
+        <div class="main" id="mydeal">
+            <h2>We are dealing in:</h2>
+            <div class="main_flex">
+                <div class="image">
+                    <img src="images/petrol1.png">
+                    <figcaption>Petrol</figcaption>
+                </div>
+
+                <div class="image">
+                    <img src="images/gasoline.png">
+                    <figcaption>Diesel</figcaption>
+                </div>
+
+                <div class="image">
+                    <img src="images/fuel (2).png">
+                    <figcaption>Lubricants</figcaption>
+                </div>
+
+                <div class="image">
+                    <img src="images/fuel-station (1).png">
+                    <figcaption>CNG</figcaption>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="work">
+            <img src="images/offer2.svg">
+        </div>
+
+        <div class="sidebar">
+            <h3>How Does It Work?</h3>
+            <p>Fuel Reaches You in 5 Simple Steps</p>
+            <script>
+                var i = 0; 			// Start Point
+                var images = [];	// Images Array
+                var time = 2000;	// Time Between Switch
+
+                // Image List
+                images[0] = 'images/login.png';
+                images[1] = 'images/profile.png';
+                images[2] = 'images/petrol.png';
+                images[3] = 'images/asset.png';
+                images[4] = 'images/order.png';
+                images[5] = 'images/last.png';
+
+                // Change Image
+                function changeImg() {
+                    document.slide.src = images[i];
+
+                    // Check If Index Is Under Max
+                    if (i < images.length - 1) {
+                        // Add 1 to Index
+                        i++;
+                    } else {
+                        // Reset Back To O
+                        i = 0;
+                    }
+
+                    // Run function every x seconds
+                    setTimeout("changeImg()", time);
+                }
+
+                // Run function when page loads
+                window.onload = changeImg;
+            </script>
+            <img name="slide" width="500" height="500">
+        </div>
+
+        <div class="info" id="mysolution">
+            <h3>Safe and Reliable Solutions</h3>
+            <div class="info_flex">
+                <div class="info1">
+                    <img src="images/schedule.png">
+                    <p>Pre-booking available as per your requirement on the vacant time slots </p>
+                    <div class="hero"></div>
+                </div>
+
+                <div class="info1">
+                    <img src="images/booking.png">
+                    <p>Fuel ordering, monitoring & payments through the App</p>
+                    <div class="hero"></div>
+                </div>
+
+                <div class="info1">
+                    <img src="images/badge.png">
+                    <p>Ensured quality of fuel directly procured from the OMCs </p>
+                    <div class="hero"></div>
+                </div>
+
+                <div class="info1">
+                    <img src="images/clipboard.png">
+                    <p>Order tracking available</p>
+                    <div class="hero"></div>
+                </div>
+
+                <div class="info1">
+                    <img src="images/fast-delivery.png">
+                    <p>Fastest delivery anytime anywhere</p>
+                    <div class="hero"></div>
+                </div>
+
+                <div class="info2">
+                    <img src="images/fast-delivery.png">
+                    <p>Fastest delivery anytime anywhere</p>
+                    <div class="hero"></div>
+                </div>
+
+            </div>
+
+
+        </div>
+
+        <div class="why">
+            <h2>Why Petrogennie ?</h2>
+            <div class="why_flex">
+                <div class="why1">
+                    <img src="images/homes.svg" style="width: 150px; height: 150px;">
+                </div>
+
+                <div class="why1">
+                    <img src="images/30-minutes-delivery.png">
+                    <figcaption>30 mins fast<br>delivery</figcaption>
+                </div>
+
+                <div class="why1">
+                    <img src="images/24-7.png">
+                    <figcaption>Gives 24*7 Customer<br> Support </figcaption>
+                </div>
+
+                <div class="why1">
+                    <img src="images/waranty.png">
+                    <figcaption>Provides original<br> material</figcaption>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="faq" id="myfaq">
+            <h2>FAQS</h2>
+            <ul>
+                <li>WHAT WE DO?</li>
+                <p>We deliver Fuel to your doorstep. We want to take away your problems of managing your fuel
+                    requirements. We intend to automate the whole process of inventory management in the most reliable,
+                    safe, and timely manner.</p>
+            </ul>
+
+            <ul>
+                <li>HOW SAFE IS TO ORDER DIESEL AT DOORSTEP?</li>
+                <p>We deliver fuel in state-of-the-art diesel tankers which conform to all safety norms and statutory
+                    approvals/licenses/requirements of PESO (Petroleum and Explosive Safety Organization), Weights,
+                    Measures, Taxation, etc. Our driver and the co-driver trained and are equipped with all the
+                    necessary things to deal with any situation.</p>
+            </ul>
+
+            <ul>
+                <li>HOW DO I ENSURE ABOUT THE RIGHT QUALITY & QUANTITY OF THE FUEL?</li>
+                <p>Our fuel are regulated as per the Central / State Government control orders/guidelines. You can ask
+                    for on-the-spot certification for both quantity and quality checks. Each delivery vehicle carries
+                    relevant equipment to do the checks and certify. Moreover, we procure fuel directly from the oil
+                    depots of OMCs (Oil Marketing Companies). The stringent Q&Q checks controlled by these OMCs are
+                    being maintained by us, thereby we deliver the same high standard fuel as supplied by OMCs, and
+                    hence it is the best quality that we deliver at your doorstep.</p>
+            </ul>
+
+            <ul>
+                <li>IS DOORSTEP DELIVERY EXPENSIVE?</li>
+                <p>We charge the same price that you would pay to procure diesel from a petrol pump. However, we do
+                    charge a nominal convenience fee for getting it at your doorstep anytime, anywhere.</p>
+            </ul>
+
+            <ul>
+                <li>Which areas are being served by FuelBuddy right now?
+                </li>
+                <p>Our services are available in Bangalore, Hyderabad, Delhi-NCR, Chennai, Kolkata, Pune, Navi Mumbai,
+                    Thane, Ahmedabad, Nasik, Lucknow, Kanpur and a number of other tier 2 cites in the north at present.
+                </p>
+            </ul>
+
+            <ul>
+                <li>Which areas are being served by Petrogennie right now?
+                </li>
+                <p>Our services are available in Bangalore, Hyderabad, Delhi-NCR, Chennai, Kolkata, Pune, Navi Mumbai,
+                    Thane, Ahmedabad, Nasik, Lucknow, Kanpur and a number of other tier 2 cites in the north at present.
+                </p>
+            </ul>
+
+
+            <ul>
+                <li>Can I schedule my future requirement of fuel instead ordering when I need?
+
+                </li>
+                <p>Yes. Please contact us on 1800 123 2206 and we will gladly help on-board you as one of our scheduled
+                    delivery customers.</p>
+            </ul>
+
+
+
+        </div>
+        <div class="hello" id="mycontact">
+            <h2>Contact Us</h2>
+            <div class="contactbar">
+                <div class="contact1">
+                    <p>If you have any questions or need help, feel free to contact our team.</p>
+
+                    <a href="tel:18001232206"><i class="fas fa-phone-alt"></i>1800 123 2206</a>
+                    <a href="mailto:theakshaykumar98@gmail.com"><i
+                            class="fas fa-envelope"></i>theakshaykumar98@gmail.com</a>
+
+                    <p>Corporate Address:</p>
+                    <p>Solaris II Unit 106, Saki Vihar Road,
+                        Opp. L&T Gate No. 6, Powai
+                        Mumbai - 400076</p>
+
+                    <p>Registered Address:</p>
+                    <p>B 1701, Lake Castle CHS Ltd,
+                        Hiranandani Gardens, Powai, Mumbai,
+                        Mumbai Suburban, Maharashtra – 400076</p>
+
+                </div>
+                <div class="contact2">
+                    <h4>Personal Details*</h4>
+                    <form action="#" method="post" autocomplete="off">
+                        <div class="inputbox">
+
+                            <input type="text" id="text" name="text" placeholder="First Name*" class="input2" required>
+                            <input type="text" id="text" name="text" placeholder="Last Name*" class="input2" required>
+
+                        </div>
+
+                        <div class="inputbox">
+
+                            <input type="email" id="email" name="email" placeholder="Email*" class="input2" required>
+                            <input type="tel" id="Phone" name="phone" placeholder="Phone*" class="input2" required>
+                            <input type="text" id="text" name="text" placeholder="City*" class="input2" required>
+
+                        </div>
+
+                        <h4>Message*</h4>
+                        <textarea class="area" placeholder="Your Query"></textarea>
+                        <br>
+                        <input type="checkbox" required class="input3"> I Agree to the <span>Terms & Conditions</span>
+
+                        <input type="submit" value="Send" class="submit2">
+
+                    </form>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+        <div class="footer">
+            <div class="romio1">
+                <img src="images/petrogennie2.png">
+            </div>
+
+            <div class="romio">
+                <h4> company</h4>
+
+                <a href="#">About us</a>
+                <a href="#">Terms</a>
+                <a href="#">Privacy Policy</a>
+            </div>
+
+            <div class="romio">
+                <h4> Support</h4>
+
+                <a href="#">Reliable Solutions</a>
+                <a href="#">FAQS</a>
+            </div>
+
+            <div class="romio">
+                <h4> Contact</h4>
+
+                <a href="#">Enquire Now</a>
+                <a href="#">Partner with us</a>
+            </div>
+
+
+            <div class="romio2">
+                <a href="index.html"> <img src="images/playstore.svg" class="play"></a>
+                <a href="index.html"> <img src="images/appstore.svg"></a>
+
+            </div>
+
+        </div>
+
+        <div class="footer_bottom">
+            &copy; 2022 No Copyright | All Rights Reserved | Created By Akshay Kumar
+        </div>
+
+
+
+    </div>
+</body>
+
+</html>
